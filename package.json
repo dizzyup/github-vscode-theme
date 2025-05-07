@@ -57,7 +57,7 @@
   "scripts": {
     "start": "nodemon --watch src src/index.js",
     "build": "node src/index.js && mkdir -p build",
-    "package": "vsce package -o ./build/github-vscode-theme.vsix",
+    "package": "vsce package -o ./build/poolside-vscode-theme.vsix",
     "prepublishOnly": "npm run build && vsce publish",
     "release": "changeset publish"
   },

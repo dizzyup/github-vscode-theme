@@ -40,13 +40,16 @@ function getTheme({ theme, name }) {
   return {
     name: name,
     colors: {
+      "toolbar.hoverBackground": color.btn.ghost.hoverBg,
+      "toolbar.activeBackground": color.btn.ghost.activeBg,
+
       focusBorder: color.accent.emphasis,
       foreground: color.fg.default,
       descriptionForeground: color.fg.muted,
       errorForeground: color.danger.fg,
 
-      "textLink.foreground": color.accent.fg,
-      "textLink.activeForeground": color.accent.fg,
+      "textLink.foreground": color.accent.emphasis,
+      "textLink.activeForeground": color.accent.emphasis,
       "textBlockQuote.background": color.canvas.inset,
       "textBlockQuote.border": color.border.default,
       "textCodeBlock.background": color.neutral.muted,
@@ -114,7 +117,7 @@ function getTheme({ theme, name }) {
       "list.focusForeground": color.fg.default,
       "list.focusBackground": color.accent.subtle,
       "list.inactiveFocusBackground": color.accent.subtle,
-      "list.highlightForeground": color.accent.fg,
+      "list.highlightForeground": color.accent.emphasis,
 
       "tree.indentGuidesStroke": color.border.muted,
 
@@ -125,7 +128,7 @@ function getTheme({ theme, name }) {
       "notifications.border": color.border.default,
       "notificationsErrorIcon.foreground": color.danger.fg,
       "notificationsWarningIcon.foreground": color.attention.fg,
-      "notificationsInfoIcon.foreground": color.accent.fg,
+      "notificationsInfoIcon.foreground": color.accent.emphasis,
 
       "pickerGroup.border": color.border.default,
       "pickerGroup.foreground": color.fg.muted,
@@ -181,7 +184,7 @@ function getTheme({ theme, name }) {
       "editorIndentGuide.background": alpha(color.fg.default, 0.12),
       "editorIndentGuide.activeBackground": alpha(color.fg.default, 0.24),
       "editorWhitespace.foreground": lightDark(scale.gray[3], scale.gray[5]),
-      "editorCursor.foreground": color.accent.fg,
+      "editorCursor.foreground": color.accent.emphasis,
 
       "editor.findMatchBackground": color.attention.emphasis,
       "editor.findMatchHighlightBackground": alpha(scale.yellow[1], 0.5),
